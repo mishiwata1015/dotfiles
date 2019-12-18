@@ -17,7 +17,7 @@ deploy: ## Create symlink to home directory
 	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 
 init: ## Setup environment settings
-	@$(foreach val, $(wildcard ./etc/init/*.sh), DOTFILES_ROOT=$(DOTFILES_ROOT) bash $(DOTFILES_ROOT)/$(val);)
+	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/etc/init/init.sh
 
 update: ## Fetch changes for this repo
 	git pull origin master
