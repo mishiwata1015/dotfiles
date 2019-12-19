@@ -1,0 +1,19 @@
+[core]
+	excludesfile = ~/.gitignore_global
+[user]
+	email = mishiwata1015@gmail.com
+	name = Masanori Ishiwata
+
+[alias]
+	uncommit = reset HEAD~
+
+[tig "bind"]
+	status = C !git commit -v
+	diff = F ?!git commit --fixup %(commit)
+	diff = S ?!git commit --squash %(commit)
+	main = F ?!git commit --fixup %(commit)
+	main = S ?!git commit --squash %(commit)
+
+[push]
+	default = current
+
