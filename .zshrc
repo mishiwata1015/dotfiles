@@ -46,6 +46,7 @@ alias ll='ls -GFlh'
 alias cdq='cd ~/src/github.com/increments/Qiita'
 
 # redeem
+alias rebe='~/src/github.com/increments/Qiita/bin/redeem exec'
 alias railsc='~/src/github.com/increments/Qiita/bin/redeem exec spring rails c'
 alias railsg='~/src/github.com/increments/Qiita/bin/redeem exec spring rails g'
 alias railsr='~/src/github.com/increments/Qiita/bin/redeem exec spring rails r'
@@ -59,7 +60,6 @@ alias db:migrate:status='~/src/github.com/increments/Qiita/bin/redeem exec sprin
 alias gp='git pull'
 alias st='git status'
 alias br='git branch'
-alias co='git checkout'
 alias co='git checkout'
 alias di='git diff'
 alias rebase='git rebase -i --autosquash'
