@@ -46,7 +46,7 @@ alias ll='ls -GFlh'
 alias cdq='cd ~/src/github.com/increments/Qiita'
 
 # redeem
-alias rebe='~/src/github.com/increments/Qiita/bin/redeem exec'
+alias rebe='~/src/github.com/increments/Qiita/bin/redeem exec bundle exec'
 alias railsc='~/src/github.com/increments/Qiita/bin/redeem exec spring rails c'
 alias railsg='~/src/github.com/increments/Qiita/bin/redeem exec spring rails g'
 alias railsr='~/src/github.com/increments/Qiita/bin/redeem exec spring rails r'
