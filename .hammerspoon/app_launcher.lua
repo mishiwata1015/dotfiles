@@ -10,7 +10,7 @@ local function registerAppLauncer(modifier, app)
 end
 
 registerAppLauncer("C", "Google Chrome")
-registerAppLauncer("D", "Dash")
+registerAppLauncer("R", "Dash")
 registerAppLauncer("I", "iterm")
 registerAppLauncer("S", "Slack")
 registerAppLauncer("K", "Sketch")
