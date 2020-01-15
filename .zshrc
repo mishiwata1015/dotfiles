@@ -42,10 +42,11 @@ alias ls='ls -GF'
 alias la='ls -GFAl'
 alias ll='ls -GFlh'
 
+# mishiwata1015
+alias cddot='cd ~/src/github.com/mishiwata1015/dotfiles'
+
 # qiita
 alias cdq='cd ~/src/github.com/increments/Qiita'
-
-# redeem
 alias re='~/src/github.com/increments/Qiita/bin/redeem exec'
 alias railsc='~/src/github.com/increments/Qiita/bin/redeem exec spring rails c'
 alias railsg='~/src/github.com/increments/Qiita/bin/redeem exec spring rails g'
