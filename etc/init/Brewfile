@@ -1,9 +1,32 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
+brew 'git'
+brew 'nodenv'
+brew 'rbenv'
 brew "awscli"
 brew "jq"
 brew "tig"
 brew "tmux"
 brew "tree"
-brew "zsh"
+brew "yarn"
 brew "zsh-completions"
+brew "zsh"
+
+cask_args appdir: '/Applications'
+tap 'homebrew/cask'
+
+cask '1password'
+cask 'alfred'
+cask 'bitwarden'
+cask 'clipy'
+cask 'dash'
+cask 'docker'
+cask 'google-chrome'
+cask 'hammerspoon'
+cask 'insomnia'
+cask 'iterm2'
+cask 'sequel-pro'
+cask 'skitch'
+cask 'slack'
+cask 'spectacle'
+cask 'visual-studio-code'
