@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
+
 brew 'git'
 brew 'nodenv'
 brew 'rbenv'
@@ -21,7 +22,9 @@ cask 'bitwarden'
 cask 'clipy'
 cask 'dash'
 cask 'docker'
+cask 'evernote'
 cask 'google-chrome'
+cask 'gyazo'
 cask 'hammerspoon'
 cask 'insomnia'
 cask 'iterm2'
