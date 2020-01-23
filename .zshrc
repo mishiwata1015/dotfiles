@@ -71,13 +71,10 @@ PROMPT='%m:%c %n$ '
 # {{{1 Keybinding
 bindkey -e
 
-# {{{1 anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
-
-if [ -d $HOME/.anyenv ] ; then
-    export PATH="$HOME/.anyenv/bin:$PATH"
-    eval "$(anyenv init -)"
-fi
+# rbenv
+[[ -d ~/.rbenv  ]] && \
+  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+  eval "$(rbenv init -)"
 
 # lsに色をつける
 compinit
