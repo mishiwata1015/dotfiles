@@ -6,6 +6,7 @@
 
 [alias]
 	uncommit = reset HEAD~
+	showpr = "!f() { git log --merges --oneline --reverse --ancestry-path $1...master | grep 'Merge pull request #' | head -n 1; }; f"
 
 [tig "bind"]
 	status = C !git commit -v
