@@ -22,6 +22,8 @@
     "files.trimFinalNewlines": true,
     "ruby.rubocop.configFilePath": "/Users/ishiwata/src/github.com/increments/Qiita/.rubocop.yml",
     "editor.tabSize": 2,
+    "editor.renderControlCharacters": true,
+    "editor.copyWithSyntaxHighlighting": false,
     "ruby.rubocop.executePath": "/Users/ishiwata/src/github.com/increments/Qiita/bin/",
     "window.zoomLevel": 1,
     "files.autoSave": "off",
@@ -34,4 +36,6 @@
     "workbench.activityBar.visible": true,
     "ruby.rubocop.useBundler": true,
     "editor.suggestSelection": "first",
+    "breadcrumbs.enabled": true,
+    "workbench.iconTheme": "vscode-icons",
 }
