@@ -17,12 +17,12 @@ brew bundle --verbose --file="$DOTFILES_ROOT/etc/init/Brewfile"
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 
 rm "$VSCODE_SETTING_DIR/settings.json"
-ln -s "$DOTFILES_ROOT/.vscode/settings.json" "${VSCODE_SETTING_DIR}/settings.json"
+ln -s "$DOTFILES_ROOT/.myapp/vscode/settings.json" "${VSCODE_SETTING_DIR}/settings.json"
 
-# rm "$VSCODE_SETTING_DIR/keybindings.json"
-# ln -s "$DOTFILES_ROOT/.vscode/keybindings.json" "${VSCODE_SETTING_DIR}/keybindings.json"
+rm "$VSCODE_SETTING_DIR/keybindings.json"
+ln -s "$DOTFILES_ROOT/.myapp/vscode/keybindings.json" "${VSCODE_SETTING_DIR}/keybindings.json"
 
-cat "$DOTFILES_ROOT/.vscode/extensions.txt" | while read line
+cat "$DOTFILES_ROOT/.myapp/vscode/extensions.txt" | while read line
 do
  code --install-extension $line
 done

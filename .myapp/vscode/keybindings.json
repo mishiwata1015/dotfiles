@@ -1,0 +1,23 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "shift+alt+cmd+c",
+    "command": "-copyRelativeFilePath",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "-search.action.rerunEditorSearch",
+    "when": "editorLangId == 'search-result' && editorLangId == 'search-result'"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "copyRelativeFilePath",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "shift+alt+cmd+r",
+    "command": "search.action.rerunEditorSearch",
+    "when": "editorLangId == 'search-result' && editorLangId == 'search-result'"
+  }
+]

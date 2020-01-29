@@ -11,6 +11,7 @@
         "**/.factorypath": true
     },
     "search.exclude": {
+        "**/.git": true,
         "/devtools/redeem/env/rbenv/versions/": true,
         "/node_modules": true
     },
