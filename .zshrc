@@ -47,6 +47,7 @@ alias cddot='cd ~/src/github.com/mishiwata1015/dotfiles'
 
 # qiita
 alias cdq='cd ~/src/github.com/increments/Qiita'
+alias codeq='code ~/.myapp/vscode/qiita.code-workspace'
 alias re='~/src/github.com/increments/Qiita/bin/redeem exec'
 alias railsc='~/src/github.com/increments/Qiita/bin/redeem exec spring rails c'
 alias railsg='~/src/github.com/increments/Qiita/bin/redeem exec spring rails g'

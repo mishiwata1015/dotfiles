@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"name": "Qiita",
+			"path": "/Users/ishiwata/src/github.com/increments/Qiita"
+		},
+		{
+			"name": "client_v1",
+			"path": "/Users/ishiwata/src/github.com/increments/Qiita/client/public/v1"
+		},
+		{
+			"name": "client_v2",
+			"path": "/Users/ishiwata/src/github.com/increments/Qiita/client/public/v2"
+		},
+		{
+			"name": "client_v3",
+			"path": "/Users/ishiwata/src/github.com/increments/Qiita/client/public/v3"
+		},
+		{
+			"name": "client_teams",
+			"path": "/Users/ishiwata/src/github.com/increments/Qiita/client/teams"
+		},
+		{
+			"name": "client_jobs",
+			"path": "/Users/ishiwata/src/github.com/increments/Qiita/client/public/qiita_jobs"
+		},
+		{
+			"name": "gems",
+			"path": "/Users/ishiwata/src/github.com/increments/Qiita/devtools/redeem/env/rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems"
+		}
+	],
+	"settings": {}
+}
