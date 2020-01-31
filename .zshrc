@@ -77,6 +77,11 @@ bindkey -e
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
 
+# nodenv
+[[ -d ~/.nodenv  ]] && \
+  export PATH=${HOME}/.nodenv/bin:${PATH} && \
+  eval "$(nodenv init -)"
+
 # lsに色をつける
 compinit
 
