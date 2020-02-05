@@ -149,8 +149,13 @@ dotfiles_initialize() {
   fi
 }
 
-dotfiles_install() {
-  # 1. Download mishiwata1015/dotfiles repository to $DOTFILES_ROOT.
+if [ -z "${DOTFILES_ROOT:-}" ]; then
+  DOTFILES_ROOT="$HOME/src/github.com/mishiwata1015/dotfiles"; export DOTFILES_ROOT
+fi
+DOTFILES_GITHUB="git@github.com:mishiwata1015/dotfiles.git"; export DOTFILES_GITHUB
+
+main() {
+  # 1. Download dotfiles repository to $DOTFILES_ROOT.
   dotfiles_download
 
   # 2. Deploy dotfiles to my home directory.
@@ -158,15 +163,6 @@ dotfiles_install() {
 
   # 3. Execute all sh files in etc/init directory.
   dotfiles_initialize
-}
-
-if [ -z "${DOTFILES_ROOT:-}" ]; then
-  DOTFILES_ROOT="$HOME/src/github.com/mishiwata1015/dotfiles"; export DOTFILES_ROOT
-fi
-DOTFILES_GITHUB="https://github.com/mishiwata1015/dotfiles.git"; export DOTFILES_GITHUB
-
-main() {
-  dotfiles_install
 }
 
 main
