@@ -26,7 +26,7 @@
     "editor.renderControlCharacters": true,
     "editor.copyWithSyntaxHighlighting": false,
     "ruby.rubocop.executePath": "/Users/ishiwata/src/github.com/increments/Qiita/bin/",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "files.autoSave": "off",
     "diffEditor.ignoreTrimWhitespace": true,
     "files.associations": {
@@ -39,4 +39,6 @@
     "editor.suggestSelection": "first",
     "breadcrumbs.enabled": true,
     "workbench.iconTheme": "vscode-icons",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "javascript.updateImportsOnFileMove.enabled": "never",
 }
