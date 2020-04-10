@@ -6,6 +6,7 @@
 
 [alias]
 	uncommit = reset HEAD~
+	wip = "commit --allow-empty --no-verify -m '[ci skip] wip'"
 	showpr = "!f() { git log --merges --oneline --reverse --ancestry-path $1...master | grep 'Merge pull request #' | head -n 1; }; f"
 
 [tig "bind"]
