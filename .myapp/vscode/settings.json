@@ -41,4 +41,6 @@
     "workbench.iconTheme": "vscode-icons",
     "typescript.updateImportsOnFileMove.enabled": "never",
     "javascript.updateImportsOnFileMove.enabled": "never",
+    "editor.minimap.enabled": false,
+    "solargraph.bundlerPath": "~/src/github.com/increments/Qiita/bin/redeem",
 }

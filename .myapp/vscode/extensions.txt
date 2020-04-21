@@ -1,4 +1,5 @@
 aliariff.slim-lint
+castwide.solargraph
 christian-kohler.path-intellisense
 CoenraadS.bracket-pair-colorizer-2
 eamodio.gitlens
