@@ -101,11 +101,9 @@ dotfiles_download() {
 
   e_newline && e_header "Downloading dotfiles..."
 
-  # Use https only on download
-  # if is_exists "git"; then
-  #   git clone --recursive "$DOTFILES_GITHUB" "$DOTFILES_ROOT"
-  # elif is_exists "curl" || is_exists "wget"; then
-  if is_exists "curl" || is_exists "wget"; then
+  if is_exists "git"; then
+    git clone --recursive "$DOTFILES_GITHUB" "$DOTFILES_ROOT"
+  elif is_exists "curl" || is_exists "wget"; then
     local tarball="https://github.com/mishiwata1015/dotfiles/archive/master.tar.gz"
     if is_exists "curl"; then
       curl -L "$tarball"
