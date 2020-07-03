@@ -13,6 +13,9 @@ fi
 
 brew bundle --verbose --file="$DOTFILES_ROOT/etc/init/Brewfile"
 
+# zsh
+chsh -s /bin/zsh
+
 # vscode
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 
