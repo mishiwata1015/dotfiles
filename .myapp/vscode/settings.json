@@ -26,7 +26,7 @@
     "editor.renderControlCharacters": true,
     "editor.copyWithSyntaxHighlighting": false,
     "ruby.rubocop.executePath": "/Users/ishiwata/src/github.com/increments/Qiita/bin/",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 0,
     "files.autoSave": "off",
     "diffEditor.ignoreTrimWhitespace": true,
     "files.associations": {

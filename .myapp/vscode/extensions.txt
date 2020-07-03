@@ -1,4 +1,5 @@
 aliariff.slim-lint
+asciidoctor.asciidoctor-vscode
 bibhasdn.unique-lines
 castwide.solargraph
 christian-kohler.path-intellisense
@@ -6,12 +7,12 @@ CoenraadS.bracket-pair-colorizer-2
 eamodio.gitlens
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+hashicorp.terraform
 jebbs.plantuml
 joaompinto.asciidoctor-vscode
 kaiwood.endwise
 kumar-harsh.graphql-for-vscode
 kyoshidajp.vscode-tosa
-mauve.terraform
 mechatroner.rainbow-csv
 misogi.ruby-rubocop
 ms-azuretools.vscode-docker

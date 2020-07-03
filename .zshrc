@@ -54,6 +54,7 @@ alias railsc='~/src/github.com/increments/Qiita/bin/redeem exec spring rails c'
 alias railsg='~/src/github.com/increments/Qiita/bin/redeem exec spring rails g'
 alias railsr='~/src/github.com/increments/Qiita/bin/redeem exec spring rails r'
 alias rspec='~/src/github.com/increments/Qiita/bin/redeem exec spring rspec'
+alias rubo='~/src/github.com/increments/Qiita/bin/redeem exec rubocop -a'
 alias db:migrate='~/src/github.com/increments/Qiita/bin/redeem exec spring rails db:migrate'
 alias db:reset='~/src/github.com/increments/Qiita/bin/redeem exec spring rails db:reset'
 alias db:rollback='~/src/github.com/increments/Qiita/bin/redeem exec spring rails db:rollback'
@@ -93,4 +94,7 @@ zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'c
 
 # See: https://qiita.com/lichtshinoza/items/ed03f42614ee5605974d
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# See: https://qiita.com/hinatades/items/d38be4830191f251935d
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
