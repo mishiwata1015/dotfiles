@@ -12,12 +12,13 @@ brew "yarn"
 brew "zsh-completions"
 brew "zsh"
 
+# cask 'deepl' # Download from https://www.deepl.com/translator
+# cask 'zoom' # Download from https://zoom.us/download
 cask '1password'
 cask 'alfred'
 cask 'bitwarden'
 cask 'clipy'
 cask 'dash'
-cask 'deepl'
 cask 'docker'
 cask 'evernote'
 cask 'figma'
@@ -35,4 +36,3 @@ cask 'slack'
 cask 'spectacle'
 cask 'virtualbox'
 cask 'visual-studio-code'
-cask 'zoom'

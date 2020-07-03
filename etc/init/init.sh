@@ -8,9 +8,11 @@ is_exists() {
 
 # Brew
 if ! is_exists "brew"; then
+  xcode-select --install
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+brew upgrade
 brew bundle --verbose --file="$DOTFILES_ROOT/etc/init/Brewfile"
 
 # zsh
