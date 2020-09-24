@@ -2,6 +2,7 @@ tap "homebrew/core"
 
 brew 'git'
 brew 'nodenv'
+brew 'pyenv'
 brew 'rbenv'
 brew "awscli"
 brew "jq"

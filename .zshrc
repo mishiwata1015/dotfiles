@@ -84,6 +84,11 @@ bindkey -e
   export PATH=${HOME}/.nodenv/bin:${PATH} && \
   eval "$(nodenv init -)"
 
+# pyenv
+[[ -d ~/.pyenv  ]] && \
+  export PATH=${HOME}/.pyenv/bin:${PATH} && \
+  eval "$(pyenv init -)"
+
 # lsに色をつける
 compinit
 
@@ -97,4 +102,3 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # See: https://qiita.com/hinatades/items/d38be4830191f251935d
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
