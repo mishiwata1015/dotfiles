@@ -26,7 +26,7 @@
     "editor.renderControlCharacters": true,
     "editor.copyWithSyntaxHighlighting": false,
     "ruby.rubocop.executePath": "/Users/h-2628/src/github.com/increments/Qiita/bin/",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 5,
     "files.autoSave": "off",
     "diffEditor.ignoreTrimWhitespace": true,
     "files.associations": {
@@ -43,4 +43,7 @@
     "javascript.updateImportsOnFileMove.enabled": "never",
     "editor.minimap.enabled": false,
     "solargraph.bundlerPath": "~/src/github.com/increments/Qiita/bin/redeem",
+    "[plaintext]": {
+        "editor.quickSuggestions": false
+    }
 }
