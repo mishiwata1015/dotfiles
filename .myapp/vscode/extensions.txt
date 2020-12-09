@@ -10,12 +10,15 @@ formulahendry.auto-rename-tag
 hashicorp.terraform
 jebbs.plantuml
 joaompinto.asciidoctor-vscode
+jpoissonnier.vscode-styled-components
 kaiwood.endwise
 kumar-harsh.graphql-for-vscode
 kyoshidajp.vscode-tosa
+mattlott.copy-github-url
 mechatroner.rainbow-csv
 misogi.ruby-rubocop
 ms-azuretools.vscode-docker
+ms-vscode-remote.remote-containers
 otoniel-isidoro.vscode-ruby-ctags
 rebornix.ruby
 ryu1kn.partial-diff
