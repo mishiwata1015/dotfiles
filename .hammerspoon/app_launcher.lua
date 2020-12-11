@@ -15,7 +15,7 @@ registerAppLauncer("F", "Figma")
 registerAppLauncer("I", "iterm")
 registerAppLauncer("R", "Dash")
 registerAppLauncer("S", "Slack")
-registerAppLauncer("T", "Sequel Pro")
+registerAppLauncer("T", "Sequel Ace")
 registerAppLauncer("V", "Visual Studio Code")
 
 -- Show help message for application launcher
