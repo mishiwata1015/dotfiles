@@ -10,13 +10,14 @@ local function registerAppLauncer(modifier, app)
 end
 
 registerAppLauncer("C", "Google Chrome")
-registerAppLauncer("H", "Skitch")
 registerAppLauncer("F", "Figma")
+registerAppLauncer("H", "Skitch")
 registerAppLauncer("I", "iterm")
 registerAppLauncer("R", "Dash")
 registerAppLauncer("S", "Slack")
 registerAppLauncer("T", "Sequel Ace")
 registerAppLauncer("V", "Visual Studio Code")
+registerAppLauncer("Z", "Zoom")
 
 -- Show help message for application launcher
 hs.hotkey.bind(mash, "/", function ()
