@@ -17,7 +17,7 @@ registerAppLauncer("R", "Dash")
 registerAppLauncer("S", "Slack")
 registerAppLauncer("T", "Sequel Ace")
 registerAppLauncer("V", "Visual Studio Code")
-registerAppLauncer("Z", "Zoom")
+registerAppLauncer("Z", "zoom.us")
 
 -- Show help message for application launcher
 hs.hotkey.bind(mash, "/", function ()
