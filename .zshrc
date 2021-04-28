@@ -69,7 +69,7 @@ alias di='git diff'
 alias rebase='git rebase -i --autosquash'
 
 # {{{1 prompt
-PROMPT='%m:%c %n$ '
+PROMPT='%c$ '
 
 # {{{1 Keybinding
 bindkey -e
