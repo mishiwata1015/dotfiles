@@ -1,3 +1,4 @@
+alefragnani.rtf
 aliariff.slim-lint
 asciidoctor.asciidoctor-vscode
 bibhasdn.unique-lines
@@ -19,6 +20,10 @@ mechatroner.rainbow-csv
 misogi.ruby-rubocop
 ms-azuretools.vscode-docker
 ms-vscode-remote.remote-containers
+ms-vscode.cpptools
+ms-vsliveshare.vsliveshare
+msysyamamoto.vscode-digdag
+mtxr.sqltools
 otoniel-isidoro.vscode-ruby-ctags
 rebornix.ruby
 ryu1kn.partial-diff
