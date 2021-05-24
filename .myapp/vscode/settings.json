@@ -26,11 +26,11 @@
     "editor.renderControlCharacters": true,
     "editor.copyWithSyntaxHighlighting": false,
     "ruby.rubocop.executePath": "/Users/h-2628/src/github.com/increments/Qiita/bin/",
-    "window.zoomLevel": 5,
     "files.autoSave": "off",
     "diffEditor.ignoreTrimWhitespace": true,
     "files.associations": {
-        "*.cap": "ruby"
+        "*.cap": "ruby",
+        ".env": "shellscript"
     },
     "vscodetosa.token": "ffcf8a3bbd73e9430325f89eeda0dfd2b1506c81",
     "asciidoc.use_asciidoctor_js": false,
@@ -45,5 +45,7 @@
     "solargraph.bundlerPath": "~/src/github.com/increments/Qiita/bin/redeem",
     "[plaintext]": {
         "editor.quickSuggestions": false
-    }
+    },
+    "window.zoomLevel": 2,
+    "workbench.startupEditor": "none"
 }
