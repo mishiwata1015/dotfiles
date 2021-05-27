@@ -1,7 +1,7 @@
 local simpleCmd = false
 local map = hs.keycodes.map
 
-local function eikanaEvent(event)
+local function kanaSwitchEvent(event)
     local c = event:getKeyCode()
     local f = event:getFlags()
     if event:getType() == hs.eventtap.event.types.keyDown then
@@ -22,8 +22,8 @@ local function eikanaEvent(event)
     end
 end
 
-eikana = hs.eventtap.new(
+kanaSwitcher = hs.eventtap.new(
   {hs.eventtap.event.types.keyDown, hs.eventtap.event.types.flagsChanged},
-  eikanaEvent
+  kanaSwitchEvent
 )
-eikana:start()
+kanaSwitcher:start()
