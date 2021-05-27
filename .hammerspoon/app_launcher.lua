@@ -18,6 +18,7 @@ registerAppLauncer("M", "Mail")
 registerAppLauncer("S", "Slack")
 registerAppLauncer("T", "Sequel Ace")
 registerAppLauncer("V", "Visual Studio Code")
+registerAppLauncer("X", "Firefox")
 
 -- Show help message for application launcher
 hs.hotkey.bind(mash, "/", function ()
