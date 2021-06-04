@@ -21,11 +21,9 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "ruby.rubocop.configFilePath": "/Users/h-2628/src/github.com/increments/Qiita/.rubocop.yml",
     "editor.tabSize": 2,
     "editor.renderControlCharacters": true,
     "editor.copyWithSyntaxHighlighting": false,
-    "ruby.rubocop.executePath": "/Users/h-2628/src/github.com/increments/Qiita/bin/",
     "files.autoSave": "off",
     "diffEditor.ignoreTrimWhitespace": true,
     "files.associations": {
