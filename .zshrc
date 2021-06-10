@@ -100,9 +100,6 @@ zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'c
 # See: https://qiita.com/lichtshinoza/items/ed03f42614ee5605974d
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-# See: https://qiita.com/hinatades/items/d38be4830191f251935d
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # See: https://qiita.com/mikan3rd/items/d41a8ca26523f950ea9d
 # git-promptの読み込み
 source ~/.zsh/git-prompt.sh
