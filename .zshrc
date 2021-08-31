@@ -48,20 +48,8 @@ alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
 # mishiwata1015
 alias cddot='cd ~/src/github.com/mishiwata1015/dotfiles'
 
-# qiita
-alias cdq='cd ~/src/github.com/increments/Qiita'
-alias codeq='code ~/.myapp/vscode/qiita.code-workspace'
-alias coder='code ~/src/github.com/rails/rails'
-alias re='~/src/github.com/increments/Qiita/bin/redeem exec'
-alias railsc='~/src/github.com/increments/Qiita/bin/redeem exec spring rails c'
-alias railsg='~/src/github.com/increments/Qiita/bin/redeem exec spring rails g'
-alias railsr='~/src/github.com/increments/Qiita/bin/redeem exec spring rails r'
-alias rspec='~/src/github.com/increments/Qiita/bin/redeem exec spring rspec'
-alias rubo='~/src/github.com/increments/Qiita/bin/redeem exec rubocop -a'
-alias db:migrate='~/src/github.com/increments/Qiita/bin/redeem exec spring rails db:migrate'
-alias db:reset='~/src/github.com/increments/Qiita/bin/redeem exec spring rails db:reset'
-alias db:rollback='~/src/github.com/increments/Qiita/bin/redeem exec spring rails db:rollback'
-alias db:migrate:status='~/src/github.com/increments/Qiita/bin/redeem exec spring rails db:migrate:status'
+# Leaner Technologies
+alias cdl='cd ~/src/github.com/leaner-co-jp/leaner-procurement-server'
 
 # git
 alias gp='git pull'
