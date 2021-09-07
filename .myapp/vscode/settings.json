@@ -40,7 +40,6 @@
     "typescript.updateImportsOnFileMove.enabled": "never",
     "javascript.updateImportsOnFileMove.enabled": "never",
     "editor.minimap.enabled": false,
-    "solargraph.bundlerPath": "~/src/github.com/increments/Qiita/bin/redeem",
     "[plaintext]": {
         "editor.quickSuggestions": false
     },
