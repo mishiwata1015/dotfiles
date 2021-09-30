@@ -46,5 +46,7 @@
     "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 2,
+    "gitlens.views.tags.files.compact": false,
+    "explorer.compactFolders": false
 }
