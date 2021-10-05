@@ -28,7 +28,8 @@
     "diffEditor.ignoreTrimWhitespace": true,
     "files.associations": {
         "*.cap": "ruby",
-        ".env": "shellscript"
+        ".env": "shellscript",
+        "*.jb": "ruby"
     },
     "vscodetosa.token": "ffcf8a3bbd73e9430325f89eeda0dfd2b1506c81",
     "asciidoc.use_asciidoctor_js": false,
@@ -46,7 +47,7 @@
     "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "gitlens.views.tags.files.compact": false,
     "explorer.compactFolders": false
 }
