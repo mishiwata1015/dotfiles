@@ -53,6 +53,7 @@ alias cdl='cd ~/src/github.com/leaner-co-jp/leaner-procurement-server'
 alias railsc='docker-compose exec rails bundle exec rails c'
 alias rspec='docker-compose exec rails bundle exec rspec'
 alias rubo='docker-compose exec rails bundle exec rubocop -a'
+alias rv='sh ~/src/github.com/mishiwata1015/dotfiles/etc/scripts/open-waiting-review-prs.sh'
 
 # git
 alias gp='git pull'

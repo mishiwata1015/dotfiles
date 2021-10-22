@@ -3,6 +3,3 @@
 .vscode
 rubocop
 .solargraph.yml
-
-# Leaner
-open-waiting-review-prs.sh
