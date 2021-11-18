@@ -43,7 +43,8 @@ alias la='ls -GFAl'
 alias ll='ls -GFlh'
 
 # brew
-alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
+# .zprofileでPathを通すので不要
+# alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
 
 # mishiwata1015
 alias cddot='cd ~/src/github.com/mishiwata1015/dotfiles'
