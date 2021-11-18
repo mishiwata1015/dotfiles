@@ -48,6 +48,5 @@
     "security.workspace.trust.untrustedFiles": "open",
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
     "gitlens.views.tags.files.compact": false,
-    "explorer.compactFolders": false,
-    "window.zoomLevel": 1
+    "explorer.compactFolders": false
 }
