@@ -42,10 +42,6 @@ alias ls='ls -GF'
 alias la='ls -GFAl'
 alias ll='ls -GFlh'
 
-# brew
-# .zprofileでPathを通すので不要
-# alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
-
 # mishiwata1015
 alias cddot='cd ~/src/github.com/mishiwata1015/dotfiles'
 
@@ -94,7 +90,7 @@ zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'c
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # From HomeBrew
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # See: https://github.com/zsh-users/zsh-autosuggestions#configuration
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#6E6F70'
