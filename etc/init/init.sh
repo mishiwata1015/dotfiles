@@ -16,11 +16,6 @@ fi
 brew upgrade
 brew bundle --verbose --file="$DOTFILES_ROOT/etc/init/Brewfile"
 
-# zsh
-sudo chsh -s /usr/local/bin/zsh
-chmod 755 /usr/local/share/zsh/site-functions
-chmod 755 /usr/local/share/zsh
-
 # vscode
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 
