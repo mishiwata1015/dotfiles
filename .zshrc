@@ -78,6 +78,9 @@ bindkey -e
   export PATH=${HOME}/.pyenv/bin:${PATH} && \
   eval "$(pyenv init -)"
 
+# For mysql2 gem
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+
 # lsに色をつける
 compinit
 
