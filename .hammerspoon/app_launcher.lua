@@ -11,6 +11,7 @@ end
 
 registerAppLauncer("C", "Google Chrome")
 registerAppLauncer("D", "zoom.us")
+registerAppLauncer("E", "Teamflow")
 registerAppLauncer("F", "Figma")
 registerAppLauncer("H", "Skitch")
 registerAppLauncer("I", "iterm")
