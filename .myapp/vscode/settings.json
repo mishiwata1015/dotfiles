@@ -49,5 +49,6 @@
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
     "gitlens.views.tags.files.compact": false,
     "explorer.compactFolders": false,
-    "bracket-pair-colorizer-2.depreciation-notice": false
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "vsicons.dontShowNewVersionMessage": true
 }
