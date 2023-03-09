@@ -1,6 +1,8 @@
 # {{{1 General
 export EDITOR=vim
 
+eval "$(direnv hook zsh)"
+
 # {{{1 Completion
 autoload -Uz compinit; compinit -u
 
@@ -68,11 +70,6 @@ bindkey -e
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
 
-# nodenv
-[[ -d ~/.nodenv  ]] && \
-  export PATH=${HOME}/.nodenv/bin:${PATH} && \
-  eval "$(nodenv init -)"
-
 # pyenv
 [[ -d ~/.pyenv  ]] && \
   export PATH=${HOME}/.pyenv/bin:${PATH} && \
@@ -117,5 +114,4 @@ GIT_PS1_SHOWUPSTREAM=auto
 setopt PROMPT_SUBST ; PS1='%F{green}%c$ %F{red}$(__git_ps1 "(%s)")%f
 \$ '
 
-# asdf
-. /opt/homebrew/opt/asdf/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh

@@ -12,8 +12,12 @@
     },
     "search.exclude": {
         "**/.git": true,
+        "/.nuxt": true,
+        "/assets": true,
         "/devtools/redeem/env/rbenv/versions/": true,
-        "/node_modules": true
+        "/log": true,
+        "/node_modules": true,
+        "/tmp": true
     },
     "files.watcherExclude": {
         "/node_modules/": true
@@ -34,7 +38,6 @@
     "vscodetosa.token": "ffcf8a3bbd73e9430325f89eeda0dfd2b1506c81",
     "asciidoc.use_asciidoctor_js": false,
     "workbench.activityBar.visible": true,
-    "ruby.rubocop.useBundler": true,
     "editor.suggestSelection": "first",
     "breadcrumbs.enabled": true,
     "workbench.iconTheme": "vscode-icons",
@@ -42,7 +45,11 @@
     "javascript.updateImportsOnFileMove.enabled": "never",
     "editor.minimap.enabled": false,
     "[plaintext]": {
-        "editor.quickSuggestions": false
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
     },
     "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
@@ -50,5 +57,7 @@
     "gitlens.views.tags.files.compact": false,
     "explorer.compactFolders": false,
     "bracket-pair-colorizer-2.depreciation-notice": false,
-    "vsicons.dontShowNewVersionMessage": true
+    "vsicons.dontShowNewVersionMessage": true,
+    "playwright.reuseBrowser": false,
+    "window.zoomLevel": 2
 }
