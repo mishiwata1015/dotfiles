@@ -65,11 +65,6 @@ alias rebase='git rebase -i --autosquash'
 # {{{1 Keybinding
 bindkey -e
 
-# rbenv
-[[ -d ~/.rbenv  ]] && \
-  export PATH=${HOME}/.rbenv/bin:${PATH} && \
-  eval "$(rbenv init -)"
-
 # pyenv
 [[ -d ~/.pyenv  ]] && \
   export PATH=${HOME}/.pyenv/bin:${PATH} && \

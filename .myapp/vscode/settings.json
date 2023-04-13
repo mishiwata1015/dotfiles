@@ -2,7 +2,6 @@
     "files.exclude": {
         "/.DS_Store": true,
         "/.git": true,
-        "/devtools/redeem/env/rbenv/versions/": true,
         "/node_modules": true,
         "/node_modules/": true,
         "**/.classpath": true,
@@ -14,7 +13,6 @@
         "**/.git": true,
         "/.nuxt": true,
         "/assets": true,
-        "/devtools/redeem/env/rbenv/versions/": true,
         "/log": true,
         "/node_modules": true,
         "/tmp": true
@@ -59,5 +57,7 @@
     "bracket-pair-colorizer-2.depreciation-notice": false,
     "vsicons.dontShowNewVersionMessage": true,
     "playwright.reuseBrowser": false,
-    "window.zoomLevel": 2
+    "editor.inlineSuggest.enabled": true,
+    "git.confirmSync": false,
+    "vscode-run-rspec-file.custom-command": "docker-compose exec rails bundle exec rspec"
 }
