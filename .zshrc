@@ -58,17 +58,12 @@ alias rv='sh ~/src/github.com/mishiwata1015/dotfiles/etc/scripts/open-waiting-re
 alias gp='git pull'
 alias st='git status'
 alias br='git branch'
-alias co='git checkout'
+alias sw='git switch'
 alias di='git diff'
 alias rebase='git rebase -i --autosquash'
 
 # {{{1 Keybinding
 bindkey -e
-
-# pyenv
-[[ -d ~/.pyenv  ]] && \
-  export PATH=${HOME}/.pyenv/bin:${PATH} && \
-  eval "$(pyenv init -)"
 
 # For mysql2 gem
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
