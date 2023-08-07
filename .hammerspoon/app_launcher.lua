@@ -9,7 +9,7 @@ local function registerAppLauncer(modifier, app)
   end)
 end
 
-registerAppLauncer("C", "Google Chrome")
+registerAppLauncer("C", "Arc")
 registerAppLauncer("D", "zoom.us")
 registerAppLauncer("E", "Teamflow")
 registerAppLauncer("F", "Figma")

@@ -59,6 +59,7 @@ alias gp='git pull'
 alias st='git status'
 alias br='git branch'
 alias sw='git switch'
+alias co='git checkout'
 alias di='git diff'
 alias rebase='git rebase -i --autosquash'
 
