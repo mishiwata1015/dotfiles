@@ -11,14 +11,14 @@ end
 
 registerAppLauncer("C", "Arc")
 registerAppLauncer("D", "zoom.us")
-registerAppLauncer("E", "Teamflow")
 registerAppLauncer("F", "Figma")
 registerAppLauncer("H", "Skitch")
 registerAppLauncer("I", "iterm")
 registerAppLauncer("M", "Mail")
 registerAppLauncer("S", "Slack")
 registerAppLauncer("T", "Sequel Ace")
-registerAppLauncer("V", "Visual Studio Code")
+registerAppLauncer("V", "Cursor")
+-- registerAppLauncer("V", "Visual Studio Code")
 registerAppLauncer("X", "Firefox")
 
 -- Show help message for application launcher

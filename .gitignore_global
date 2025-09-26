@@ -4,3 +4,4 @@
 rubocop
 .solargraph.yml
 .envrc
+.npmrc

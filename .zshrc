@@ -49,9 +49,9 @@ alias cddot='cd ~/src/github.com/mishiwata1015/dotfiles'
 
 # Leaner Technologies
 alias cdl='cd ~/src/github.com/leaner-co-jp/leaner-procurement-server'
-alias railsc='docker-compose exec rails bundle exec rails c'
-alias rspec='docker-compose exec rails bundle exec rspec'
-alias rubo='docker-compose exec rails bundle exec rubocop -a'
+alias railsc='docker compose exec rails bundle exec rails c'
+alias rspec='docker compose exec rails bundle exec rspec'
+alias rubo='docker compose exec rails bundle exec rubocop -a'
 alias rv='sh ~/src/github.com/mishiwata1015/dotfiles/etc/scripts/open-waiting-review-prs.sh'
 
 # git
@@ -106,3 +106,6 @@ setopt PROMPT_SUBST ; PS1='%F{green}%c$ %F{red}$(__git_ps1 "(%s)")%f
 \$ '
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+export GITHUB_PACKAGE_PAT=xxx
+export PATH="/Users/mishiwata1015/.asdf/installs/nodejs/20.18.3/bin:$PATH"
