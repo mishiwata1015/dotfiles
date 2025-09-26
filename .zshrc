@@ -84,8 +84,6 @@ GIT_PS1_SHOWUPSTREAM=auto
 # プロンプトの表示設定(好きなようにカスタマイズ可)
 setopt PROMPT_SUBST ; PS1='%F{green}%c$ %F{red}$(__git_ps1 "(%s)")%f
 \$ '
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 export GITHUB_PACKAGE_PAT=xxx
-export PATH="/Users/mishiwata1015/.asdf/installs/nodejs/20.18.3/bin:$PATH"
 eval "$(mise activate zsh)"
 source ~/.safe-chain/scripts/init-posix.sh # Safe-chain Zsh initialization script
