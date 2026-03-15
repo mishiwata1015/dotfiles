@@ -28,11 +28,9 @@ logging() {
   local text="$2"
 
   case "$1" in
-    ERROR | WARN)
+    ERROR)
       color=red
       ;;
-    *)
-      text="$1"
   esac
 
   timestamp() {
@@ -69,7 +67,7 @@ dotfiles_download() {
   e_newline && e_header "Downloading dotfiles..."
 
   mkdir -p "$(dirname "$DOTFILES_ROOT")"
-  git clone --recursive "$DOTFILES_GITHUB" "$DOTFILES_ROOT"
+  git clone "$DOTFILES_GITHUB" "$DOTFILES_ROOT"
 
   e_newline && e_done "Download"
 }
