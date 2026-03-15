@@ -64,20 +64,8 @@ logging() {
   timestamp; ink "$color" "$text"; echo
 }
 
-log_pass() {
-  logging SUCCESS "$1"
-}
-
 log_fail() {
   logging ERROR "$1" 1>&2
-}
-
-log_info() {
-  logging INFO "$1"
-}
-
-log_echo() {
-  logging TITLE "$1"
 }
 
 e_newline() {
