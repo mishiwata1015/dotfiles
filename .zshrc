@@ -41,10 +41,10 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # See: https://github.com/zsh-users/zsh-autosuggestions#configuration
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#6E6F70'
 # git-promptの読み込み
-source ~/.zsh/git-prompt.sh
+source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
 # git-completionの読み込み
-fpath=(~/.zsh $fpath)
-zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
+zstyle ':completion:*:*:git:*' script /opt/homebrew/etc/bash_completion.d/git-completion.bash
 autoload -Uz compinit && compinit
 # プロンプトのオプション表示設定
 GIT_PS1_SHOWDIRTYSTATE=true
