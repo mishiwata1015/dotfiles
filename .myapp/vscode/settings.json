@@ -3,19 +3,12 @@
         "/.DS_Store": true,
         "/.git": true,
         "/node_modules": true,
-        "/node_modules/": true,
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
+        "/node_modules/": true
     },
     "search.exclude": {
         "**/.git": true,
-        "/.nuxt": true,
-        "/assets": true,
         "/log": true,
         "/node_modules": true,
-        "/sig": true,
         "/tmp": true
     },
     "files.watcherExclude": {
@@ -34,12 +27,8 @@
         ".env": "shellscript",
         "*.jb": "ruby"
     },
-    "vscodetosa.token": "ffcf8a3bbd73e9430325f89eeda0dfd2b1506c81",
-    "asciidoc.use_asciidoctor_js": false,
     "editor.suggestSelection": "first",
     "breadcrumbs.enabled": true,
-    "typescript.updateImportsOnFileMove.enabled": "never",
-    "javascript.updateImportsOnFileMove.enabled": "never",
     "editor.minimap.enabled": false,
     "[plaintext]": {
         "editor.quickSuggestions": {
@@ -51,19 +40,13 @@
     "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
-    "gitlens.views.tags.files.compact": false,
     "explorer.compactFolders": false,
-    "bracket-pair-colorizer-2.depreciation-notice": false,
-    "playwright.reuseBrowser": false,
     "editor.inlineSuggest.enabled": true,
     "git.confirmSync": false,
     "vscode-run-rspec-file.custom-command": "docker compose exec rails bundle exec rspec",
     "editor.mouseWheelZoom": true,
     "workbench.editor.enablePreview": false,
-    "window.zoomLevel": 1,
-    "github.copilot.editor.enableAutoCompletions": true,
     "rubyLsp.erbSupport": false,
     "rubyLsp.formatter": "none",
-    "rubyLsp.addonSettings": {},
     "extensions.ignoreRecommendations": true
 }

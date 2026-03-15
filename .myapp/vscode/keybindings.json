@@ -31,8 +31,4 @@
     "command": "-extension.runLineOnRspec",
     "when": "editorLangId == 'ruby'"
   },
-  {
-    "key": "cmd+i",
-    "command": "composerMode.agent"
-  }
 ]
