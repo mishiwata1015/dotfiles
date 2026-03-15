@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Utilities {{{
+# Utilities
 ink() {
   local open="\033["
   local close="${open}0m"
@@ -59,7 +59,6 @@ e_header() {
 e_done() {
   printf " \033[37;1m%s\033[m...\033[32mOK\033[m\n" "✔ $*"
 }
-# }}}
 
 dotfiles_download() {
   if [ -d "$DOTFILES_ROOT" ]; then
@@ -78,11 +77,6 @@ dotfiles_download() {
 dotfiles_deploy() {
   e_newline && e_header "Deploying dotfiles..."
 
-  if [ ! -d $DOTFILES_ROOT ]; then
-    log_fail "$DOTFILES_ROOT: not found"
-    exit 1
-  fi
-
   cd "$DOTFILES_ROOT"
   make deploy &&
   e_newline && e_done "Deploy"
@@ -92,13 +86,8 @@ dotfiles_initialize() {
   e_newline
   e_header "Initializing dotfiles..."
 
-  if [ -f Makefile ]; then
-    make init &&
-    e_newline && e_done "Initialize"
-  else
-    log_fail "Makefile: not found"
-    exit 1
-  fi
+  make init &&
+  e_newline && e_done "Initialize"
 }
 
 if [ -z "${DOTFILES_ROOT:-}" ]; then
