@@ -12,7 +12,7 @@ local function kanaSwitchEvent(event)
         if not f['cmd'] then
             if simpleCmd == false then
                 if c == map['cmd'] then
-                    hs.keycodes.setMethod('Romaji')
+                    hs.keycodes.setLayout('ABC')
                 elseif c == map['rightcmd'] then
                     hs.keycodes.setMethod('Hiragana')
                 end
@@ -22,7 +22,7 @@ local function kanaSwitchEvent(event)
     end
 end
 
-local kanaSwitcher = hs.eventtap.new(
+kanaSwitcher = hs.eventtap.new(
   {hs.eventtap.event.types.keyDown, hs.eventtap.event.types.flagsChanged},
   kanaSwitchEvent
 )
