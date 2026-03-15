@@ -1,8 +1,8 @@
 *~
 .DS_Store
 .vscode
-rubocop
-.solargraph.yml
+.rubocop.yml
+.rubocop_todo.yml
 .envrc
 .npmrc
 settings.local.json
