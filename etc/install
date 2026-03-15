@@ -7,43 +7,19 @@ ink() {
   local red="1;31m"
   local purple="1;35m"
   local gray="0;37m"
-
-  local text="$1"
-  local color="$close"
-
-  if [ "$#" -eq 2 ]; then
-    text="$2"
-    case "$1" in
-      red | purple | gray)
-        eval color="\$$1"
-        ;;
-    esac
-  fi
-
-  printf "${open}${color}${text}${close}"
-}
-
-logging() {
-  local color=
-  local text="$2"
-
-  case "$1" in
-    ERROR)
-      color=red
-      ;;
-  esac
-
-  timestamp() {
-    ink gray "["
-    ink purple "$(date +%H:%M:%S)"
-    ink gray "] "
-  }
-
-  timestamp; ink "$color" "$text"; echo
+  local color
+  eval color="\$$1"
+  printf "${open}${color}$2${close}"
 }
 
 log_fail() {
-  logging ERROR "$1" 1>&2
+  {
+    ink gray "["
+    ink purple "$(date +%H:%M:%S)"
+    ink gray "] "
+    ink red "$1"
+    echo
+  } 1>&2
 }
 
 e_newline() {
