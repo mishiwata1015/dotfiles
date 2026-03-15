@@ -115,6 +115,7 @@ dotfiles_download() {
       log_fail "dotfiles-main: not found"
       exit 1
     fi
+    mkdir -p "$(dirname "$DOTFILES_ROOT")"
     command mv -f dotfiles-main "$DOTFILES_ROOT"
   else
     log_fail "git, curl or wget required"
