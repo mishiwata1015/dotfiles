@@ -58,6 +58,7 @@ alias rebase='git rebase -i --autosquash'
 bindkey -e
 # For mysql2 gem
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 # lsに色をつける
 compinit
 export LSCOLORS=gxfxcxdxbxegedabagacad
