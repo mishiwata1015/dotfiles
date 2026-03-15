@@ -1,23 +1,12 @@
 #!/bin/bash
 
 # Utilities {{{
-is_exists() {
-  command -v "$1" > /dev/null 2>&1
-  return $?
-}
-
 ink() {
   local open="\033["
   local close="${open}0m"
-  local black="0;30m"
   local red="1;31m"
-  local green="1;32m"
-  local yellow="1;33m"
-  local blue="1;34m"
   local purple="1;35m"
-  local cyan="1;36m"
   local gray="0;37m"
-  local white="$close"
 
   local text="$1"
   local color="$close"
@@ -25,7 +14,7 @@ ink() {
   if [ "$#" -eq 2 ]; then
     text="$2"
     case "$1" in
-      black | red | green | yellow | blue | purple | cyan | gray | white)
+      red | purple | gray)
         eval color="\$$1"
         ;;
     esac
@@ -39,17 +28,8 @@ logging() {
   local text="$2"
 
   case "$1" in
-    TITLE)
-      color=yellow
-      ;;
     ERROR | WARN)
       color=red
-      ;;
-    INFO)
-      color=blue
-      ;;
-    SUCCESS)
-      color=green
       ;;
     *)
       text="$1"
@@ -89,26 +69,8 @@ dotfiles_download() {
 
   e_newline && e_header "Downloading dotfiles..."
 
-  if is_exists "git"; then
-    mkdir -p "$(dirname "$DOTFILES_ROOT")"
-    git clone --recursive "$DOTFILES_GITHUB" "$DOTFILES_ROOT"
-  elif is_exists "curl" || is_exists "wget"; then
-    local tarball="https://github.com/mishiwata1015/dotfiles/archive/main.tar.gz"
-    if is_exists "curl"; then
-      curl -L "$tarball"
-    else
-      wget -O - "$tarball"
-    fi | tar xvz
-    if [ ! -d dotfiles-main ]; then
-      log_fail "dotfiles-main: not found"
-      exit 1
-    fi
-    mkdir -p "$(dirname "$DOTFILES_ROOT")"
-    command mv -f dotfiles-main "$DOTFILES_ROOT"
-  else
-    log_fail "git, curl or wget required"
-    exit 1
-  fi
+  mkdir -p "$(dirname "$DOTFILES_ROOT")"
+  git clone --recursive "$DOTFILES_GITHUB" "$DOTFILES_ROOT"
 
   e_newline && e_done "Download"
 }
