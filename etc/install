@@ -1,29 +1,7 @@
 #!/bin/bash
 
-# Utilities
-ink() {
-  local open="\033["
-  local close="${open}0m"
-  local red="1;31m"
-  local purple="1;35m"
-  local gray="0;37m"
-  local color
-  eval color="\$$1"
-  printf "${open}${color}$2${close}"
-}
-
 log_fail() {
-  {
-    ink gray "["
-    ink purple "$(date +%H:%M:%S)"
-    ink gray "] "
-    ink red "$1"
-    echo
-  } 1>&2
-}
-
-e_newline() {
-  printf "\n"
+  printf "\033[0;37m[\033[1;35m$(date +%H:%M:%S)\033[0;37m] \033[1;31m%s\033[0m\n" "$1" 1>&2
 }
 
 e_header() {
@@ -34,50 +12,30 @@ e_done() {
   printf " \033[37;1m%s\033[m...\033[32mOK\033[m\n" "✔ $*"
 }
 
-dotfiles_download() {
-  if [ -d "$DOTFILES_ROOT" ]; then
-    log_fail "$DOTFILES_ROOT: already exists"
-    exit 1
-  fi
-
-  e_newline && e_header "Downloading dotfiles..."
-
-  mkdir -p "$(dirname "$DOTFILES_ROOT")"
-  git clone "$DOTFILES_GITHUB" "$DOTFILES_ROOT"
-
-  e_newline && e_done "Download"
-}
-
-dotfiles_deploy() {
-  e_newline && e_header "Deploying dotfiles..."
-
-  cd "$DOTFILES_ROOT"
-  make deploy &&
-  e_newline && e_done "Deploy"
-}
-
-dotfiles_initialize() {
-  e_newline
-  e_header "Initializing dotfiles..."
-
-  make init &&
-  e_newline && e_done "Initialize"
-}
-
 if [ -z "${DOTFILES_ROOT:-}" ]; then
   DOTFILES_ROOT="$HOME/src/github.com/mishiwata1015/dotfiles"; export DOTFILES_ROOT
 fi
 DOTFILES_GITHUB="git@github.com:mishiwata1015/dotfiles.git"; export DOTFILES_GITHUB
 
-main() {
-  # 1. Download dotfiles repository to $DOTFILES_ROOT.
-  dotfiles_download
+# 1. Download dotfiles repository to $DOTFILES_ROOT.
+if [ -d "$DOTFILES_ROOT" ]; then
+  log_fail "$DOTFILES_ROOT: already exists"
+  exit 1
+fi
 
-  # 2. Deploy dotfiles to my home directory.
-  dotfiles_deploy &&
+printf "\n" && e_header "Downloading dotfiles..."
+mkdir -p "$(dirname "$DOTFILES_ROOT")"
+git clone "$DOTFILES_GITHUB" "$DOTFILES_ROOT"
+printf "\n" && e_done "Download"
 
-  # 3. Execute all sh files in etc/init directory.
-  dotfiles_initialize
-}
+# 2. Deploy dotfiles to home directory.
+printf "\n" && e_header "Deploying dotfiles..."
+cd "$DOTFILES_ROOT"
+make deploy &&
+printf "\n" && e_done "Deploy" &&
 
-main
+# 3. Initialize dotfiles.
+printf "\n" &&
+e_header "Initializing dotfiles..." &&
+make init &&
+printf "\n" && e_done "Initialize"
