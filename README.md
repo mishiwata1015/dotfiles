@@ -18,3 +18,11 @@ For work Mac, also run:
 ```bash
 $ brew bundle --file=~/src/github.com/mishiwata1015/dotfiles/etc/init/Brewfile.work
 ```
+
+Then create `.zshrc.work` based on the sample and fill in your actual values:
+
+```bash
+$ cp ~/.zshrc.work.sample ~/.zshrc.work
+# Edit ~/.zshrc.work with your actual values
+$ ln -sfn ~/src/github.com/mishiwata1015/dotfiles/.zshrc.work ~/.zshrc.work
+```
