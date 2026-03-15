@@ -13,8 +13,9 @@ if ! is_exists "brew"; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-brew upgrade
 brew bundle --verbose --file="$DOTFILES_ROOT/etc/init/Brewfile"
+# For work Mac, also run:
+# brew bundle --file="$DOTFILES_ROOT/etc/init/Brewfile.work"
 
 # vscode
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
