@@ -102,6 +102,7 @@ dotfiles_download() {
   e_newline && e_header "Downloading dotfiles..."
 
   if is_exists "git"; then
+    mkdir -p "$(dirname "$DOTFILES_ROOT")"
     git clone --recursive "$DOTFILES_GITHUB" "$DOTFILES_ROOT"
   elif is_exists "curl" || is_exists "wget"; then
     local tarball="https://github.com/mishiwata1015/dotfiles/archive/main.tar.gz"

@@ -17,6 +17,7 @@ brew bundle --verbose --file="$DOTFILES_ROOT/etc/init/Brewfile"
 
 # vscode
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
+mkdir -p "${VSCODE_SETTING_DIR}"
 
 ln -sfn "$DOTFILES_ROOT/.myapp/vscode/settings.json" "${VSCODE_SETTING_DIR}/settings.json"
 ln -sfn "$DOTFILES_ROOT/.myapp/vscode/keybindings.json" "${VSCODE_SETTING_DIR}/keybindings.json"
