@@ -5,3 +5,4 @@ rubocop
 .solargraph.yml
 .envrc
 .npmrc
+settings.local.json
