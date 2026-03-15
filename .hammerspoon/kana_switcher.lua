@@ -22,7 +22,7 @@ local function kanaSwitchEvent(event)
     end
 end
 
-kanaSwitcher = hs.eventtap.new(
+local kanaSwitcher = hs.eventtap.new(
   {hs.eventtap.event.types.keyDown, hs.eventtap.event.types.flagsChanged},
   kanaSwitchEvent
 )

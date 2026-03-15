@@ -2,24 +2,22 @@ local app_map = {}
 
 local mash = {"cmd", "ctrl"}
 
-local function registerAppLauncer(modifier, app)
+local function registerAppLauncher(modifier, app)
   table.insert(app_map, string.lower(modifier) .. " - " .. app)
   hs.hotkey.bind(mash, modifier, function ()
     hs.application.launchOrFocus(app)
   end)
 end
 
-registerAppLauncer("C", "Google Chrome")
-registerAppLauncer("D", "zoom.us")
-registerAppLauncer("F", "Figma")
-registerAppLauncer("H", "Skitch")
-registerAppLauncer("I", "iterm")
-registerAppLauncer("M", "Mail")
-registerAppLauncer("S", "Slack")
-registerAppLauncer("T", "Sequel Ace")
-registerAppLauncer("V", "Cursor")
--- registerAppLauncer("V", "Visual Studio Code")
-registerAppLauncer("X", "Firefox")
+registerAppLauncher("C", "Google Chrome")
+registerAppLauncher("D", "zoom.us")
+registerAppLauncher("H", "Skitch")
+registerAppLauncher("I", "iterm")
+registerAppLauncher("M", "Mail")
+registerAppLauncher("S", "Slack")
+registerAppLauncher("T", "Sequel Ace")
+registerAppLauncher("V", "Visual Studio Code")
+registerAppLauncher("X", "Firefox")
 
 -- Show help message for application launcher
 hs.hotkey.bind(mash, "/", function ()
