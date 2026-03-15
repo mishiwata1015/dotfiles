@@ -1,2 +1,5 @@
 # Brew
 etc/init/Brewfile.lock.json
+
+# Work-specific settings (contains credentials)
+.zshrc.work
