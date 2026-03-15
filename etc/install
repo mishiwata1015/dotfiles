@@ -104,17 +104,17 @@ dotfiles_download() {
   if is_exists "git"; then
     git clone --recursive "$DOTFILES_GITHUB" "$DOTFILES_ROOT"
   elif is_exists "curl" || is_exists "wget"; then
-    local tarball="https://github.com/mishiwata1015/dotfiles/archive/master.tar.gz"
+    local tarball="https://github.com/mishiwata1015/dotfiles/archive/main.tar.gz"
     if is_exists "curl"; then
       curl -L "$tarball"
     else
       wget -O - "$tarball"
     fi | tar xvz
-    if [ ! -d dotfiles-master ]; then
-      log_fail "dotfiles-master: not found"
+    if [ ! -d dotfiles-main ]; then
+      log_fail "dotfiles-main: not found"
       exit 1
     fi
-    command mv -f dotfiles-master "$DOTFILES_ROOT"
+    command mv -f dotfiles-main "$DOTFILES_ROOT"
   else
     log_fail "git, curl or wget required"
     exit 1
