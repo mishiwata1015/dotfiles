@@ -6,3 +6,5 @@
 .envrc
 .npmrc
 settings.local.json
+
+**/.claude/.cc-writes/
