@@ -49,6 +49,8 @@
     "rubyLsp.erbSupport": false,
     "rubyLsp.formatter": "none",
     "extensions.ignoreRecommendations": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.initialHint": false,
     "extensions.autoUpdate": "off",
     "update.mode": "manual"
 }
