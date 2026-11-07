@@ -59,3 +59,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export DISABLE_AUTOUPDATER=1
 # Load work-specific settings
 [[ -f ~/.zshrc.work ]] && source ~/.zshrc.work
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/mishiwata1015/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
