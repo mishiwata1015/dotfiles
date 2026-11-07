@@ -19,10 +19,17 @@ For work Mac, also run:
 $ brew bundle --file=~/src/github.com/mishiwata1015/dotfiles/etc/init/Brewfile.work
 ```
 
-Then create `.zshrc.work` based on the sample and fill in your actual values:
+Then create `.zshrc.work` and `.zshenv` based on the samples and fill in your actual values.
+Both files are gitignored because they contain credentials.
+
+- `.zshrc.work`: interactive-only settings (aliases, direnv hook, etc.)
+- `.zshenv`: environment variables that non-interactive shells also need (e.g. `GITHUB_PACKAGE_PAT`)
 
 ```bash
-$ cp ~/.zshrc.work.sample ~/.zshrc.work
-# Edit ~/.zshrc.work with your actual values
-$ ln -sfn ~/src/github.com/mishiwata1015/dotfiles/.zshrc.work ~/.zshrc.work
+$ cd ~/src/github.com/mishiwata1015/dotfiles
+$ cp .zshrc.work.sample .zshrc.work
+$ cp .zshenv.sample .zshenv
+# Edit .zshrc.work and .zshenv with your actual values
+$ ln -sfn "$PWD/.zshrc.work" ~/.zshrc.work
+$ ln -sfn "$PWD/.zshenv" ~/.zshenv
 ```

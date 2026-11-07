@@ -1,0 +1,8 @@
+# Environment variables that must also be visible to non-interactive shells
+# (scripts, IDE tasks, git hooks, etc.). .zshrc is not read by those shells.
+# Keep this file lightweight: zsh reads it on every invocation.
+
+# GitHub Packages
+export GITHUB_USERNAME=mishiwata1015
+export GITHUB_PACKAGE_PAT=xxx
+export BUNDLE_RUBYGEMS__PKG__GITHUB__COM=xxx

@@ -5,16 +5,8 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # Leaner Technologies
 alias cdl='cd ~/src/github.com/leaner-co-jp/leaner-procurement/server'
-alias railsc='docker compose exec rails bundle exec rails c'
-alias rspec='docker compose exec rails bundle exec rspec'
-alias rubo='docker compose exec rails bundle exec rubocop -a'
-
-# For mysql2 gem
-export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
-
-export GITHUB_USERNAME=mishiwata1015
-export GITHUB_PACKAGE_PAT=xxx
-export BUNDLE_RUBYGEMS__PKG__GITHUB__COM=xxx
+alias railsc='docker compose -f ~/src/github.com/leaner-co-jp/leaner-procurement/server/docker-compose.without-leaner-id.yml exec rails bundle exec rails c'
+alias rspec='docker compose -f ~/src/github.com/leaner-co-jp/leaner-procurement/server/docker-compose.without-leaner-id.yml exec rails bundle exec rspec'
+alias rubo='docker compose -f ~/src/github.com/leaner-co-jp/leaner-procurement/server/docker-compose.without-leaner-id.yml exec rails bundle exec rubocop -a'
 
 source ~/.safe-chain/scripts/init-posix.sh
