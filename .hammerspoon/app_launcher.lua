@@ -12,7 +12,7 @@ end
 registerAppLauncher("C", "Google Chrome")
 registerAppLauncher("D", "zoom.us")
 registerAppLauncher("H", "Skitch")
-registerAppLauncher("I", "iterm")
+registerAppLauncher("I", "Orca")
 registerAppLauncher("M", "Mail")
 registerAppLauncher("S", "Slack")
 registerAppLauncher("T", "Sequel Ace")
